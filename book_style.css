@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-circle: white;
+    --color-line: rgba(9, 9, 88, 0.952);
+}
+
+body{
+    background-color: rgba(1, 6, 32, 0.582);
+}
+
+.notebook{
+    width: 260px;
+    height: 400px;
+    background-color: rgb(35, 26, 117);
+    margin: 50px 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px white,
+                20px 20px rgba(0, 0, 0, 0.274);
+    padding: 1px;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.651), rgba(17, 17, 68, 0.651)), url(d699ecfa25a6fd2db29d83192855f41a.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.circle{
+    margin: 20px 15px;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+    background-color: var(--color-circle);
+    box-shadow: 0 40px var(--color-circle),
+                0 80px var(--color-circle),
+                0 120px var(--color-circle),
+                0 160px var(--color-circle),
+                0 200px var(--color-circle),
+                0 240px var(--color-circle),
+                0 280px var(--color-circle),
+                0 320px var(--color-circle);
+}
+
+.line{
+    width: 30px;
+    height: 7px;
+    background-color: var(--color-line);
+    border-radius: 30%;
+    margin-left: -25px;
+    box-shadow: 0 40px var(--color-line),
+                0 80px var(--color-line),
+                0 120px var(--color-line),
+                0 160px var(--color-line),
+                0 200px var(--color-line),
+                0 240px var(--color-line),
+                0 280px var(--color-line),
+                0 320px var(--color-line);
+}
+
+h2{
+    display: none;
+}
+
+@media (max-width: 330px){
+    .notebook{
+        display: none;
+    }
+    h2{
+        display: block;
+    }
+}
